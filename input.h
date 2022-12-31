@@ -8,13 +8,12 @@ void input(int *n, int *N, int *c, int *R, Request *req, Car *car, int city[][10
 			scanf("%d",&city[i][j]);
 		}
 	}
-	car=(Car*)malloc(sizeof(Car)*(*N));
+	//car=(Car*)malloc(sizeof(Car)*(*N));
 	for(i=0;i<(*N);i++)
 		scanf("%d",&car[i].src);
-	req=(Request*)malloc(sizeof(Request)*(*R));
+	//req=(Request*)malloc(sizeof(Request)*(*R));
 	for(i=0;i<(*R);i++)
 		scanf("%d%d%d%d",&req[i].src,&req[i].dest,&req[i].srtTime,&req[i].endTime);
-
 	fclose(fp);
 
 
